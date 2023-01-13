@@ -1,0 +1,161 @@
+*{
+    border: 0;
+    margin:0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+
+    /* grid-column: 3; */
+    /* justify-content: center; */
+}
+
+/* h2{
+    color:var(--card-user-text);
+} */
+
+h4{
+    color:var(--card-user-text)
+}
+
+.image{
+width: 80px;
+/* margin-left: 2.5em; */
+}
+.containerListUser{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+
+    /* width:5em; */
+}
+.containerUser{
+    border: 0.1em solid var(--card-user) ;
+    box-shadow: -8px 4px 22px -3px rgba(0,0,209,1);
+    border-radius: 30px;
+    margin: 2vw;
+}
+
+
+
+.cardUser  {
+    width:10em;
+    margin: 1vw;
+
+
+}
+
+.btnDeleteUser{
+    /* justify-content: right; */
+    border-radius: 40px;
+    /* border: 0.1em solid var(--card-user); */
+    color: red ; 
+    background-color: rgba(255, 0, 0, 0);
+    width: 10em;
+
+    
+}
+
+.btnDeleteUser:hover{
+    background-color: red;
+    color: black;
+}
+
+.containerUserName{
+    color: var(--card-user-username);
+}
+
+.containerName , .containerCity, .containerEmail, .containerNumber, .gg-phone,.gg-mail{
+    color:var(--card-user-title-text)
+}
+.email{
+    font-size:0.7em;
+}
+
+.gg-phone {
+    /* color:  rgb(43, 226, 83); */
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 22px;
+    transform: scale(var(--ggs,1))
+ }
+ .gg-phone::after,
+ .gg-phone::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+ }
+ .gg-phone::after {
+    width: 18px;
+    height: 18px;
+    border-top-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 12px;
+    border-left: 4px solid;
+    border-bottom: 4px solid;
+    left: 2px;
+    bottom: 2px;
+    background:
+       linear-gradient(
+          to left,
+          currentColor 10px,
+          transparent 0
+       ) no-repeat right 11px/6px 4px,
+       linear-gradient(
+          to left,
+          currentColor 10px,
+          transparent 0
+       ) no-repeat -1px 0/4px 6px
+ }
+ .gg-phone::before {
+    width: 20px;
+    height: 20px;
+    border: 6px double;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    bottom: 2px;
+    left: 2px
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+.gg-mail,
+.gg-mail::after {
+    display: block;
+    box-sizing: border-box;
+    height: 14px;
+    border: 2px solid
+}
+.gg-mail {
+    overflow: hidden;
+    transform: scale(var(--ggs,1));
+    position: relative;
+    width: 18px;
+    border-radius: 2px
+}
+.gg-mail::after {
+    content: "";
+    position: absolute;
+    border-radius: 3px;
+    width: 14px;
+    transform: rotate(-45deg);
+    bottom: 3px;
+    left: 0
+}
+
