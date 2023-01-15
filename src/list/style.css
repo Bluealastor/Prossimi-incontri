@@ -32,7 +32,7 @@ width: 80px;
 }
 .containerUser{
     border: 0.1em solid var(--card-user) ;
-    box-shadow: -8px 4px 22px -3px rgba(0,0,209,1);
+    box-shadow: -8px 4px 22px -3px var(--card-user);
     border-radius: 30px;
     margin: 2vw;
 }
@@ -42,12 +42,11 @@ width: 80px;
 .cardUser  {
     width:10em;
     margin: 1vw;
-
-
 }
 
 .btnDeleteUser{
     /* justify-content: right; */
+    border: var(--title) solid 1px;
     border-radius: 40px;
     /* border: 0.1em solid var(--card-user); */
     color: red ; 
@@ -59,7 +58,7 @@ width: 80px;
 
 .btnDeleteUser:hover{
     background-color: red;
-    color: black;
+    color: var(--btn-delete-user);
 }
 
 .containerUserName{
