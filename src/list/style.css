@@ -5,45 +5,41 @@
 }
 ul{
     list-style-type: none;
-
-    /* grid-column: 3; */
-    /* justify-content: center; */
 }
 
-/* h2{
-    color:var(--card-user-text);
-} */
 
 h4{
     color:var(--card-user-text)
 }
 
-.image{
-width: 80px;
-/* margin-left: 2.5em; */
-}
+
+/* ****************
+* inizio css card *
+******************/
+
 .containerListUser{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
-
-    /* width:5em; */
 }
+.image{
+    width: 80px;
+    }
 .containerUser{
     border: 0.1em solid var(--card-user) ;
     box-shadow: -8px 4px 22px -3px var(--card-user);
     border-radius: 30px;
     margin: 2vw;
 }
-
-
-
 .cardUser  {
     width:10em;
     margin: 1vw;
 }
 
+/**************************************
+* Css stile button delete single card *
+**************************************/
 .btnDeleteUser{
     /* justify-content: right; */
     border: var(--title) solid 1px;
@@ -52,8 +48,6 @@ width: 80px;
     color: red ; 
     background-color: rgba(255, 0, 0, 0);
     width: 10em;
-
-    
 }
 
 .btnDeleteUser:hover{
@@ -68,10 +62,14 @@ width: 80px;
 .containerName , .containerCity, .containerEmail, .containerNumber, .gg-phone,.gg-mail{
     color:var(--card-user-title-text)
 }
+
 .email{
     font-size:0.7em;
 }
 
+/* 
+icon Pure css thelephone and email
+*/
 .gg-phone {
     /* color:  rgb(43, 226, 83); */
     box-sizing: border-box;

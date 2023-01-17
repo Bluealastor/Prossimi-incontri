@@ -3,27 +3,6 @@
     margin:0;
     padding: 0;
 }
-
-/* :root{
-  --background:rgb(0, 0, 0);
-  --title:#3c90ff;
-  --card-user:rgba(0, 0, 209, 0.721);
-  --card-user-username:#1b5aad;
-  --card-user-title-text:#59a0fc;
-  --card-user-text:#c7ab86;
-} */
-
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-background-color: var(--background);
-} */
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

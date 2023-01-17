@@ -10,7 +10,6 @@
 /* background-color: black; */
 background-color:var(--back-ground);
 --back-ground:rgb(0, 0, 0);
-
 --title:#3c90ff;
 --card-user:rgba(0, 0, 209, 0.721);
 --card-user-username:#1b5aad;
@@ -49,12 +48,14 @@ background-color:var(--back-ground);
 
 .title {
   color: var(--title);
-  /* justify-content:  */
-  /* border:black 2px solid; */
   margin-bottom: 1vw;
   width: 20vw;
   z-index: 1;
 }
+
+/*************************
+* Button Dark/light mode *
+*************************/
 
 .btn-theme{
   background-color: var(--btn-back-theme);
@@ -68,12 +69,9 @@ background-color:var(--back-ground);
   border-radius: 3em;
 }
 
-
-
-/* .btn{
-  border:blue 5px solid;
-} */
-
+/*************
+*Final Button*
+*************/
 .btn-reset{
   border:var(--btn-reset-all) solid 0.3em;
   color: var(--btn-reset-all);
