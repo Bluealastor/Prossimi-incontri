@@ -7,7 +7,6 @@
 
 
 .dark-mode{
-/* background-color: black; */
 background-color:var(--back-ground);
 --back-ground:rgb(0, 0, 0);
 --title:#3c90ff;

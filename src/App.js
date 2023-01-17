@@ -12,13 +12,29 @@ const dataUser =() => {
 /***************************************
 *  Modalità Dark Mode and Light Mode   *
 ****************************************/
-const [theme, setTheme] = useState("light-mode")
+/***************************************************
+*    Ricordarsi del RETURN con if and else         *
+*    nella condizione ternaria hai 2 modi :        *
+*    - online se è dentro una arrow function       *
+*    - aggiungere le tonde a posto delle graffe    *
+****************************************************/
+const getThemeLocalStorage = () =>  localStorage.getItem("theme") ? localStorage.getItem("theme") : "ligh-mode"
+// ricordarsi di inpostare il salvataggio nel local storage con useEffect
+// localStorage.setItem(First, second)  
+// primo parametro "nome contenitore"
+// secondo parametro SOLO stringa
+const [theme, setTheme] = useState(getThemeLocalStorage() || "light-mode")
+
 
 const changeTheme = () =>{
   theme === "light-mode" ? setTheme("dark-mode") : setTheme("light-mode")
 }
+
+
 useEffect(()=>{
   document.documentElement.className = theme
+// ricordarsi di inpostare il salvataggio nel local storage con useEffect
+  localStorage.setItem("theme", theme)
 },[theme])
 
 /************************************************
